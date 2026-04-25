@@ -5,17 +5,14 @@ import joblib
 from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import StandardScaler
 from PIL import Image
+import sys
 import os
 
 # Sécurité : On essaie d'importer AsthmaXGB sans faire crasher l'app si utils.py a un souci
 # Sécurité et ruse pour le chargement du modèle Pickle
-try:
-    from utils import AsthmaXGB
-    import __main__
-    __main__.AsthmaXGB = AsthmaXGB
-except ImportError:
-    pass
-
+from utils import AsthmaXGB
+sys.modules['__main__'].AsthmaXGB = AsthmaXGB
+# -----------------------------------------------
 st.set_page_config(page_title="Portfolio | Abelard Mugisha", page_icon="🧬", layout="wide")
 
 # --- INJECTION DU FOND ANIMÉ ---
