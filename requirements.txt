@@ -5,4 +5,4 @@ scikit-learn==1.6.1
 joblib
 xgboost
 Pillow
-imbalanced-learnt
+imbalanced-learn
