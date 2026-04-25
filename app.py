@@ -8,8 +8,11 @@ from PIL import Image
 import os
 
 # Sécurité : On essaie d'importer AsthmaXGB sans faire crasher l'app si utils.py a un souci
+# Sécurité et ruse pour le chargement du modèle Pickle
 try:
     from utils import AsthmaXGB
+    import __main__
+    __main__.AsthmaXGB = AsthmaXGB
 except ImportError:
     pass
 
