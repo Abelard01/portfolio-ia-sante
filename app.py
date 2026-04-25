@@ -14,6 +14,8 @@ from utils import AsthmaXGB
 sys.modules['__main__'].AsthmaXGB = AsthmaXGB
 # -----------------------------------------------
 st.set_page_config(page_title="Portfolio | Abelard Mugisha", page_icon="🧬", layout="wide")
+import sklearn
+st.error(f"🔍 VERSION SCIKIT-LEARN DU SERVEUR : {sklearn.__version__}")
 
 # --- INJECTION DU FOND ANIMÉ ---
 fond_anime_clair = """
