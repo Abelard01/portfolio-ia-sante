@@ -6,3 +6,5 @@ joblib
 xgboost
 Pillow
 imbalanced-learn
+matplotlib
+seaborn
