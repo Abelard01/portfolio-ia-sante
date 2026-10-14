@@ -11,13 +11,8 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from imblearn.pipeline import Pipeline as ImbPipeline
 
 # Les algorithmes et métriques que nous avons utilisés
-from sklearn.svm import SVC
-from sklearn.metrics import classification_report, roc_auc_score, confusion_matrix, precision_recall_curve
+from sklearn.metrics import classification_report, precision_recall_curve
 from xgboost import XGBClassifier
-
-# outil de visualisation
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 
 class AsthmaXGB:

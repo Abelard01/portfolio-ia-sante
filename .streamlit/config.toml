@@ -1,0 +1,20 @@
+[theme]
+base = "light"
+primaryColor = "#1F4FD1"
+backgroundColor = "#F2F5FA"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#0F1B2D"
+borderColor = "#D8E0EC"
+linkColor = "#1F4FD1"
+baseRadius = "12px"
+font = "DM Sans:https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+codeFont = "IBM Plex Mono:https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+
+[theme.sidebar]
+backgroundColor = "#FFFFFF"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false
