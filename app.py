@@ -14,8 +14,6 @@ from utils import AsthmaXGB
 sys.modules['__main__'].AsthmaXGB = AsthmaXGB
 # -----------------------------------------------
 st.set_page_config(page_title="Portfolio | Abelard Mugisha", page_icon="🧬", layout="wide")
-import sklearn
-st.error(f"🔍 VERSION SCIKIT-LEARN DU SERVEUR : {sklearn.__version__}")
 
 # --- INJECTION DU FOND ANIMÉ ---
 fond_anime_clair = """
@@ -139,7 +137,7 @@ elif projet_choisi == " IA Prédictive (Asthme)":
     
     with tab_patient:
         with st.form("asthma_master_form"):
-            st.markdown("** Démographie & Suivi**")
+            st.markdown("**Démographie & Suivi**")
             col1, col2, col3 = st.columns(3)
             with col1:
                 index_age = st.number_input("Âge (index_age)", 18, 100, 45)
@@ -152,14 +150,14 @@ elif projet_choisi == " IA Prédictive (Asthme)":
                 previous_drugs = st.number_input("Nbr médicaments pris", 0, 20, 2)
                 drug_s = st.selectbox("Indicateur traitement (drug_s)", [0, 1])
                 
-            st.markdown("** Historique Médical (Comorbidités)**")
+            st.markdown("**Historique Médical (Comorbidités)**")
             comorbidites = st.multiselect(
                 "Sélectionnez les antécédents du patient :",
                 ["pneumonia", "sinusitis", "acute_bronchitis", "acute_laryngitis", "upper_respiratory_infection", "gerd", "rhinitis"],
                 default=["sinusitis", "gerd"]
             )
             
-            st.markdown("** Données Financières (Pré-Index)**")
+            st.markdown("**Données Financières (Pré-Index)**")
             col4, col5, col6 = st.columns(3)
             with col4:
                 total_charge = st.number_input("Charges totales ($)", 0, 100000, 2500)
